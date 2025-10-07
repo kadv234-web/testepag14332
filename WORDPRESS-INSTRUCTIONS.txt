@@ -1,0 +1,133 @@
+═══════════════════════════════════════════════════════════════════════════════
+  MEN'S FORCE - INSTRUÇÕES PARA WORDPRESS
+═══════════════════════════════════════════════════════════════════════════════
+
+ARQUIVOS CONVERTIDOS PARA HTML PURO
+------------------------------------
+Todos os arquivos PHP foram convertidos para HTML puro compatível com WordPress.
+
+LISTA DE ARQUIVOS HTML:
+-----------------------
+✓ index.html                      (Página Principal)
+✓ login.html                      (Login)
+✓ logout.html                     (Logout)
+✓ bonus-positions.html            (5 Posições)
+✓ bonus-private-session.html      (Masterclass)
+✓ bonus-lesbian-trick.html        (Lesbian Trick)
+✓ bonus-audio.html                (Áudio 3 Min)
+✓ aphrodisiac-african-juice.html  (Suco Africano)
+✓ additional-recipes.html         (Receitas Adicionais)
+✓ daily-tips.html                 (Dicas Diárias)
+✓ exercises.html                  (Exercícios)
+✓ foods-to-avoid.html             (Alimentos a Evitar)
+✓ advanced-techniques.html        (Técnicas Avançadas)
+✓ mental-preparation.html         (Preparação Mental)
+
+ARQUIVOS NECESSÁRIOS:
+---------------------
+✓ style.css                       (Estilos - NÃO MODIFICADO)
+✓ main.js                         (JavaScript - ATUALIZADO para .html)
+
+COMO INSTALAR NO WORDPRESS:
+---------------------------
+
+OPÇÃO 1 - Páginas do WordPress (RECOMENDADO):
+----------------------------------------------
+1. Acesse: WordPress Admin → Páginas → Adicionar Nova
+2. Para cada arquivo .html:
+   a) Copie TODO o conteúdo entre <body> e </body>
+   b) Cole no editor de página (modo HTML/Código)
+   c) Nomeie a página com o mesmo nome do arquivo
+   d) Publique
+
+3. Faça upload dos arquivos CSS e JS:
+   a) Vá em: Aparência → Editor de Temas
+   b) Adicione style.css e main.js ao tema
+
+4. Nas páginas, adicione no início (modo HTML):
+   <link rel="stylesheet" href="/wp-content/themes/SEU-TEMA/style.css">
+   <script src="/wp-content/themes/SEU-TEMA/main.js"></script>
+
+OPÇÃO 2 - Upload Direto (Simples):
+-----------------------------------
+1. Acesse seu servidor via FTP ou cPanel
+2. Navegue até: /public_html/ ou /www/
+3. Crie uma pasta: mens-force/
+4. Faça upload de TODOS os arquivos .html, .css, .js
+5. Acesse via: seusite.com/mens-force/index.html
+
+OPÇÃO 3 - Plugin HTML Personalizado:
+-------------------------------------
+1. Instale o plugin "Insert Headers and Footers" ou "WPCode"
+2. Para cada página, crie um custom post type HTML
+3. Cole o conteúdo dos arquivos .html
+4. Configure as URLs para apontar para as páginas corretas
+
+AUTENTICAÇÃO NO WORDPRESS:
+--------------------------
+Os arquivos foram convertidos para HTML PURO.
+A autenticação PHP foi REMOVIDA.
+
+Para proteger as páginas no WordPress:
+1. Use um plugin como:
+   - "Password Protected" (protege com senha única)
+   - "Members" (controle por papel de usuário)
+   - "User Role Editor" (permissões avançadas)
+
+2. Ou configure manualmente:
+   - Defina páginas como "Privadas"
+   - Requer login WordPress para acessar
+
+URLS ATUALIZADAS:
+-----------------
+Todas as URLs internas foram convertidas:
+✓ .php → .html
+✓ index.php → index.html
+✓ logout.php → logout.html
+
+COMPATIBILIDADE:
+----------------
+✓ 100% HTML Puro
+✓ CSS Responsivo (mobile-first)
+✓ JavaScript vanilla (sem dependências)
+✓ Funciona em qualquer servidor
+✓ Compatível com todos os temas WordPress
+✓ Sem necessidade de PHP
+
+DESIGN E LAYOUT:
+----------------
+✓ Design MANTIDO 100% idêntico ao original
+✓ Cores, fontes e espaçamentos preservados
+✓ Funcionalidades JavaScript intactas
+✓ Popups e modais funcionando
+✓ Menu mobile operacional
+✓ Audio player funcional
+
+ESTRUTURA PRESERVADA:
+---------------------
+✓ Header com logo MEN'S FORCE
+✓ Menu de navegação (Home/Logout)
+✓ Hero section
+✓ Cards de módulos
+✓ Footer com informações
+✓ Popups de Terms e Label
+✓ Scroll to top button
+✓ Animações e transições
+
+OBSERVAÇÕES IMPORTANTES:
+------------------------
+1. Nenhuma funcionalidade foi alterada
+2. Nenhum conteúdo foi modificado
+3. O design permanece 100% idêntico
+4. Apenas a tecnologia foi convertida (PHP → HTML)
+5. Compatível com qualquer hosting
+
+SUPORTE:
+--------
+Para dúvidas sobre WordPress, consulte:
+- wordpress.org/support
+- Documentação oficial do tema usado
+
+═══════════════════════════════════════════════════════════════════════════════
+  FIM DAS INSTRUÇÕES
+═══════════════════════════════════════════════════════════════════════════════

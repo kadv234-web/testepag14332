@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add active class to current page nav link
-    const currentPage = window.location.pathname.split('/').pop() || 'index.php';
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-link').forEach(link => {
         if (link.getAttribute('href') === currentPage) {
             link.classList.add('active');

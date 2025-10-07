@@ -1,0 +1,249 @@
+═══════════════════════════════════════════════════════════════════════════════
+  CHECKLIST PARA INSTALAÇÃO NO WORDPRESS
+═══════════════════════════════════════════════════════════════════════════════
+
+Use este checklist para garantir que a instalação no WordPress seja perfeita.
+
+═══════════════════════════════════════════════════════════════════════════════
+  ANTES DE COMEÇAR
+═══════════════════════════════════════════════════════════════════════════════
+
+☐ Fazer backup do WordPress atual
+☐ Ter acesso FTP ou cPanel
+☐ Ter acesso ao admin do WordPress
+☐ Decidir método de instalação (ver WORDPRESS-INSTRUCTIONS.txt)
+
+═══════════════════════════════════════════════════════════════════════════════
+  ARQUIVOS NECESSÁRIOS (TODOS INCLUÍDOS)
+═══════════════════════════════════════════════════════════════════════════════
+
+PÁGINAS HTML (14 arquivos):
+☐ index.html
+☐ login.html
+☐ logout.html
+☐ bonus-positions.html
+☐ bonus-private-session.html
+☐ bonus-lesbian-trick.html
+☐ bonus-audio.html
+☐ aphrodisiac-african-juice.html
+☐ additional-recipes.html
+☐ daily-tips.html
+☐ exercises.html
+☐ foods-to-avoid.html
+☐ advanced-techniques.html
+☐ mental-preparation.html
+
+ARQUIVOS DE ESTILO E SCRIPT (2 arquivos):
+☐ style.css
+☐ main.js
+
+DOCUMENTAÇÃO (3 arquivos):
+☐ WORDPRESS-INSTRUCTIONS.txt
+☐ CONVERSION-SUMMARY.txt
+☐ CHECKLIST-WORDPRESS.txt (este arquivo)
+
+═══════════════════════════════════════════════════════════════════════════════
+  INSTALAÇÃO - OPÇÃO 1: PÁGINAS WORDPRESS (RECOMENDADO)
+═══════════════════════════════════════════════════════════════════════════════
+
+PASSO 1: Upload de Arquivos CSS e JS
+☐ Acesse: Aparência → Editor de Temas
+☐ Faça upload de style.css
+☐ Faça upload de main.js
+☐ Anote o caminho completo dos arquivos
+
+PASSO 2: Criar Páginas
+Para CADA arquivo HTML:
+
+☐ Ir em: Páginas → Adicionar Nova
+☐ Clicar em "Modo HTML" ou "Editor de Código"
+☐ Abrir o arquivo .html correspondente
+☐ Copiar TODO conteúdo entre <body> e </body>
+☐ Colar no editor WordPress
+☐ No início, adicionar:
+   <link rel="stylesheet" href="/wp-content/themes/SEU-TEMA/style.css">
+   <script src="/wp-content/themes/SEU-TEMA/main.js"></script>
+☐ Dar um título à página (mesmo nome do arquivo)
+☐ Publicar
+
+Repetir para todas as 14 páginas.
+
+PASSO 3: Configurar URLs
+☐ Ir em: Configurações → Links Permanentes
+☐ Escolher estrutura: "Nome do Post"
+☐ Salvar alterações
+
+PASSO 4: Atualizar Links
+☐ Editar cada página
+☐ Substituir links .html por URLs WordPress
+   Exemplo: bonus-positions.html → /bonus-positions/
+☐ Salvar todas as páginas
+
+═══════════════════════════════════════════════════════════════════════════════
+  INSTALAÇÃO - OPÇÃO 2: UPLOAD DIRETO (MAIS SIMPLES)
+═══════════════════════════════════════════════════════════════════════════════
+
+PASSO 1: Criar Pasta
+☐ Via FTP ou cPanel, ir em: /public_html/
+☐ Criar pasta: mens-force/
+
+PASSO 2: Upload
+☐ Fazer upload de TODOS os 14 arquivos .html
+☐ Fazer upload de style.css
+☐ Fazer upload de main.js
+
+PASSO 3: Testar
+☐ Acessar: seusite.com/mens-force/index.html
+☐ Verificar se o design está correto
+☐ Testar todos os links
+☐ Testar menu mobile
+☐ Testar popups
+
+═══════════════════════════════════════════════════════════════════════════════
+  CONFIGURAR AUTENTICAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+MÉTODO 1: Plugin Password Protected
+☐ Instalar plugin "Password Protected"
+☐ Ativar proteção por senha
+☐ Definir senha única
+☐ Aplicar às páginas Men's Force
+
+MÉTODO 2: Páginas Privadas WordPress
+☐ Para cada página, ir em: Visibilidade
+☐ Selecionar: "Privado"
+☐ Salvar
+☐ Apenas usuários logados verão
+
+MÉTODO 3: Plugin Members
+☐ Instalar plugin "Members"
+☐ Criar papel de usuário: "MensForceUser"
+☐ Configurar permissões
+☐ Restringir páginas a este papel
+
+═══════════════════════════════════════════════════════════════════════════════
+  TESTES PÓS-INSTALAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+VISUAL E LAYOUT:
+☐ Design idêntico ao original?
+☐ Cores corretas? (#dc2626 vermelho, #000 preto)
+☐ Logo "MEN'S FORCE" aparece corretamente?
+☐ Footer aparece no final?
+
+NAVEGAÇÃO:
+☐ Menu funciona?
+☐ Links Home/Logout funcionam?
+☐ Menu mobile abre/fecha?
+☐ Links entre páginas funcionam?
+
+FUNCIONALIDADES:
+☐ Popup "Terms and Information" abre?
+☐ Popup "Label Information" abre?
+☐ Popups fecham ao clicar fora?
+☐ Botão "Scroll to Top" aparece ao rolar?
+☐ Audio player funciona (bonus-audio.html)?
+
+RESPONSIVIDADE:
+☐ Desktop (1920px) OK?
+☐ Laptop (1366px) OK?
+☐ Tablet (768px) OK?
+☐ Mobile (375px) OK?
+
+CONTEÚDO:
+☐ Todos os textos estão corretos?
+☐ Emojis aparecem?
+☐ Cards de módulos visíveis?
+☐ Imagens/ícones OK?
+
+═══════════════════════════════════════════════════════════════════════════════
+  OTIMIZAÇÕES OPCIONAIS
+═══════════════════════════════════════════════════════════════════════════════
+
+PERFORMANCE:
+☐ Minificar CSS (usando plugin WP Rocket ou similar)
+☐ Minificar JavaScript
+☐ Ativar cache do WordPress
+☐ Otimizar imagens (se houver)
+
+SEO:
+☐ Instalar Yoast SEO
+☐ Configurar meta descriptions
+☐ Adicionar sitemap
+☐ Configurar robots.txt
+
+SEGURANÇA:
+☐ Ativar HTTPS (SSL)
+☐ Instalar Wordfence Security
+☐ Configurar firewall
+☐ Backup automático
+
+═══════════════════════════════════════════════════════════════════════════════
+  TROUBLESHOOTING COMUM
+═══════════════════════════════════════════════════════════════════════════════
+
+PROBLEMA: CSS não carrega
+SOLUÇÃO:
+☐ Verificar caminho do style.css no <link>
+☐ Limpar cache do WordPress
+☐ Verificar permissões do arquivo (644)
+
+PROBLEMA: JavaScript não funciona
+SOLUÇÃO:
+☐ Verificar caminho do main.js no <script>
+☐ Abrir console do navegador (F12) para ver erros
+☐ Garantir que o script tem "defer" ou está no final
+
+PROBLEMA: Links quebrados
+SOLUÇÃO:
+☐ Verificar se todos os links terminam em .html
+☐ Verificar se os arquivos existem na mesma pasta
+☐ Usar links relativos, não absolutos
+
+PROBLEMA: Design quebrado no mobile
+SOLUÇÃO:
+☐ Verificar se viewport meta tag está presente
+☐ Testar em modo responsivo do navegador
+☐ Verificar se CSS está carregando
+
+PROBLEMA: Páginas retornam 404
+SOLUÇÃO:
+☐ Ir em: Configurações → Links Permanentes
+☐ Clicar em "Salvar Alterações" (regenera regras)
+☐ Limpar cache
+
+═══════════════════════════════════════════════════════════════════════════════
+  SUPORTE E RECURSOS
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENTAÇÃO INCLUÍDA:
+📄 WORDPRESS-INSTRUCTIONS.txt  → Instruções detalhadas
+📄 CONVERSION-SUMMARY.txt      → Resumo da conversão
+📄 CHECKLIST-WORDPRESS.txt     → Este checklist
+
+RECURSOS WORDPRESS:
+🌐 wordpress.org/support        → Suporte oficial
+🌐 wordpress.org/plugins        → Plugins recomendados
+🌐 developer.wordpress.org      → Documentação técnica
+
+PLUGINS RECOMENDADOS:
+• Password Protected            → Proteção simples
+• Members                       → Controle de acesso
+• WPCode                        → Inserir código HTML
+• WP Rocket                     → Cache e performance
+• Wordfence                     → Segurança
+
+═══════════════════════════════════════════════════════════════════════════════
+  FINALIZAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+☐ Todos os testes passaram?
+☐ Autenticação funcionando?
+☐ Design idêntico ao original?
+☐ Links funcionando?
+☐ Mobile responsivo?
+☐ Performance OK?
+
+SE TODAS AS CAIXAS ESTÃO MARCADAS: ✅ INSTALAÇÃO CONCLUÍDA!
+
+═══════════════════════════════════════════════════════════════════════════════
